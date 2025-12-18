@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Hero from '@/components/shared/Hero';
+import HeroWithVideo from '@/components/shared/HeroWithVideo';
 import GlassCard from '@/components/ui/GlassCard';
 import Button from '@/components/ui/Button';
 
@@ -45,16 +45,16 @@ const features = [
 export default function HomePage() {
   return (
     <div>
-      <Hero
+      <HeroWithVideo
         title="Welcome to Olim in TLV"
         subtitle="Your comprehensive guide to thriving in Tel Aviv. Connect, explore, and build your new life in Israel."
-        image="https://images.unsplash.com/photo-1548848571-f73f5874b2e2?w=1200"
+        videoId="DT9srZYSAUk"
         height="large"
       >
         <Button size="lg" variant="primary" className="shadow-xl">
           <Link href="/dating">Start Connecting</Link>
         </Button>
-      </Hero>
+      </HeroWithVideo>
 
       <section className="mb-16">
         <div className="text-center mb-12">
